@@ -1,0 +1,33 @@
+3.
+
+l = 40 km
+R = 1 Gbps
+v = 2*10^8 m/s
+L = 1.39 GB
+
+a)
+
+max_bit - broj bita koje predajnik prenese na link za t_prop
+
+
+max_bit = R * t_prop
+
+t_prop = l/v = 40 km / 2*10^8 m/s = 40 * 10^3 m / 2*10^8 m/s = 20 * 10^(-5) s = 200 us
+
+max_bit = R * t_prop = 1 * 10^9 bps *  20 * 10^(-5) s = 20 * 10^4 bita = 200 000 bita
+
+b)
+
+bit_width = l/max_bit = l/(R*t_prop) = l/(R*l/v) = 1/(R/v) = v/R = 2*10^8 m/s / 10^9 bps = 2 * 10^(-1) m/bit = 0.2 m/bit
+
+Sirina jednog bita je 0.2 metra odnosno 200 cm.
+
+c)
+
+L = 1.39 GB
+Lp = 1520 B
+Lh = 60 B
+
+korisni dio paketa je Lp - Lh = 1460 B
+
+br_pak = ceil(L/(Lp-Lh)) = ceil(1.39 * 2^30 B / 1460 B) = ceil(1492501135.36 / 1460) = ceil(1022261.05) = 1022262 paketa

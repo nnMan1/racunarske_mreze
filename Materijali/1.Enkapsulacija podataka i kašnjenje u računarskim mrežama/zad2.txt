@@ -1,0 +1,23 @@
+a)
+
+l1, l2
+v1, v2
+R1, R2
+L, H
+doc
+
+t
+
+A->cvoriste->B
+
+t=t_pren1+t_prop1+doc+t_pren2+t_prop2=L/R1+l1/v1+doc+L/R2+l2/v2
+
+b)
+
+R1, R2 = 100 Mbps = 100*10^6 bps = 10^8 bps
+l1, l2 = 200 m
+v1, v2 = 2*10^8 m/s
+doc = 1 us = 1*10^(-6) s
+L = 1520 B = 1520*8 bita = 12160 bita
+
+primijeni se formula iz a)
