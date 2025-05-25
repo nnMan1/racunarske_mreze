@@ -1,0 +1,41 @@
+1. UDP i TCP za svoje kontrolne zbirove (checksum) koriste komplement jedinice. 
+
+a) Prosmatrajmo tri broja: 01010101, 01110000 i 01001100. Koliko iznosi prvi komplement za zbir ova tri bajta? 
+(Napomena: UDP i TCP koriste 16 bitne riječi za izračunavanje checksume, dok se u ovom primjeru traži rad sa 8 bitnim sabircima).
+b) Prikazati cio postupak izračunavanja checksume, kao i detekcije greške. 
+Da li greška na jednom bitu može da bude neprimijećena? Da li greška na dva bita može da bude neprimijećena? Dati primjer.
+c) Izračunati Internet checksumu za sledeće 16-bitne riječi: 11010001 00100111, 11100010 11100011 i 00011100 11001001.
+
+
+a)
+ 01010101
+ 01110000
+ 01001100
+_________
+100010001
+
+prvi komplement: 011101110
+
+b)
+00010001
+       1
+_________
+00010010
+
+prvi komplement
+CHECKSUM: 11101101
+
+detekcija greske:
+
+  01010101
+  01110000
+  01001100
+  11101101
++_________
+ 111111110
+
+
+ 11111110
++       1
+_________
+ 11111111
