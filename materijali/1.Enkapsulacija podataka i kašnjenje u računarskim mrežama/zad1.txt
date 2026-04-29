@@ -1,0 +1,39 @@
+a) 
+tprop = l/v
+
+b)
+tpren = L/R
+
+c) 
+
+Poslednji bit je definitivno na komunikacionom linku.
+A prvi bit je:
+  - na odredistu ako je tprop < tpren
+  - na komunikacionom linku ako je tprop > tpren
+
+d)
+
+t_prop = t_pren 
+
+l/v = L/R
+
+l = (L*v)/R
+
+
+L - bit
+v - m/s
+R - bps (bit/s) 
+
+e)
+
+t_prop = l/v
+t_pren = L/R
+
+L = 1520 B
+l = 50 m
+R = 1 Gbps
+v = 2*10^8 m/s
+
+t_prop = l/v = (50 m) / (2*10^8 m/s) = 25 * 10^(-8) * 10/10 s = 250 * 10^(-9) s = 250 ns = 0.25 us
+t_pren = L/R = (1520B) / (1 Gbps) = 1520 * 8 bita / (10^9 bps) = 12160 * 10^(-9) s = 12.16 * 10^(-6) s = 12.16 us
+

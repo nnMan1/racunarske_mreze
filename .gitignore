@@ -1,0 +1,36 @@
+# Ignore everything in Vjezbe
+vjezbe/*
+kosta/*
+materijali/*
+rezultati/*
+ispiti/*
+
+#Do not ignore vjezbe from this year
+!vjezbe/2025-2026/
+
+#Ignore all files in this year Vjezbe
+vjezbe/2025-2026/cas*/*
+
+#Do not ignore files from this year that end with .java
+# Allow directories so git can traverse
+!vjezbe/2025-2026/**/
+
+# Allow Java files
+!vjezbe/2025-2026/**/*.java
+
+vjezbe/2025-2026/Pripreme/*
+.vscode/
+
+Plan rada.odt
+zadaci
+domaci
+materijali za vjezbu.zip
+
+.settings
+.metadata
+.class
+.xml
+.metadata
+.classpath
+.project
+bin
